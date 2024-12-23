@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت عکس‌ها با تم انار</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+    <header class="header">
+        <h1>گالری برایان</h1>
+        
+    </header>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">خانه</a></li>
+            <li><a href="gallery.html">گالری</a></li>
+            <li><a href="contact-us.html">تماس با ما</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="gallery">
+            <h2>گالری عکس‌ها</h2>
+            
+            <audio id="background-music" src="Ebi - Harighe Sabz [128].mp3" autoplay loop></audio>
+            <button class="music-btn" onclick="document.getElementById('background-music').play()">پخش</button>
+            <button class="music-btn" onclick="document.getElementById('background-music').pause()">توقف</button>
+          
+            <div class="gallery">
+                <div class="gallery-item">
+                    <a href="#img1" class="modal-trigger">
+                        <img src="1.jpg" alt="عکس 1">
+                    </a>
+                    <div class="comments-section">
+                        <h3>نظرات</h3>
+                        <ul class="comments-list" id="comments-list-1">
+                            <!-- نظرات اضافه شده -->
+                        </ul>
+                        <form class="comment-form">
+                            <input type="text" placeholder="نظر خود را بنویسید...">
+                            <button type="submit">ارسال</button>
+                        </form>
+                        <input type="checkbox" id="like1" class="like-checkbox">
+                        <label for="like1" class="like-btn">❤️</label>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#img2" class="modal-trigger">
+                        <img src="2.jpg" alt="عکس 2">
+                    </a>
+                    <div class="comments-section">
+                        <h3>نظرات</h3>
+                        <ul class="comments-list" id="comments-list-2">
+                            <!-- نظرات اضافه شده -->
+                        </ul>
+                        <form class="comment-form">
+                            <input type="text" placeholder="نظر خود را بنویسید...">
+                            <button type="submit">ارسال</button>
+                        </form>
+                        <input type="checkbox" id="like2" class="like-checkbox">
+                        <label for="like2" class="like-btn">❤️</label>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#img3" class="modal-trigger">
+                        <img src="3.jpg" alt="عکس 3">
+                    </a>
+                    <div class="comments-section">
+                        <h3>نظرات</h3>
+                        <ul class="comments-list" id="comments-list-3">
+                            <!-- نظرات اضافه شده -->
+                        </ul>
+                        <form class="comment-form">
+                            <input type="text" placeholder="نظر خود را بنویسید...">
+                            <button type="submit">ارسال</button>
+                        </form>
+                        <input type="checkbox" id="like3" class="like-checkbox">
+                        <label for="like3" class="like-btn">❤️</label>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#img4" class="modal-trigger">
+                        <img src="4.jpg" alt="عکس 4">
+                    </a>
+                    <div class="comments-section">
+                        <h3>نظرات</h3>
+                        <ul class="comments-list" id="comments-list-4">
+                            <!-- نظرات اضافه شده -->
+                        </ul>
+                        <form class="comment-form">
+                            <input type="text" placeholder="نظر خود را بنویسید...">
+                            <button type="submit">ارسال</button>
+                        </form>
+                        <input type="checkbox" id="like4" class="like-checkbox">
+                        <label for="like4" class="like-btn">❤️</label>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <a href="#img5" class="modal-trigger">
+                        <img src="5.jpg" alt="عکس 5">
+                    </a>
+                    <div class="comments-section">
+                        <h3>نظرات</h3>
+                        <ul class="comments-list" id="comments-list-5">
+                            <!-- نظرات اضافه شده -->
+                        </ul>
+                        <form class="comment-form">
+                            <input type="text" placeholder="نظر خود را بنویسید...">
+                            <button type="submit">ارسال</button>
+                        </form>
+                        <input type="checkbox" id="like5" class="like-checkbox">
+                        <label for="like5" class="like-btn">❤️</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="img1" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="1.jpg" alt="عکس 1">
+        </div>
+        <div id="img2" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="2.jpg" alt="عکس 2">
+        </div>
+        <div id="img3" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="3.jpg" alt="عکس 3">
+        </div>
+        <div id="img4" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="4.jpg" alt="عکس 4">
+        </div>
+        <div id="img5" class="modal">
+            <a href="#" class="close">&times;</a>
+            <img class="modal-content" src="5.jpg" alt="عکس 5">
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024. تمامی حقوق محفوظ است</p>
+    </footer>
+</body>
+</html>

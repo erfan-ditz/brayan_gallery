@@ -1,0 +1,271 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a8a4a48e;
+    color: #000000;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #B71C1C;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.nav {
+    background-color: #861f15;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+    background-color: #B71C1C;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #B71C1C;
+    font-size: 1.5em;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+    
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 400px;
+    height: auto;
+    border: 2px solid #4b0707;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    /* اضافه کردن پدینگ برای فضای خالی در اطراف تصویر */
+    box-sizing: border-box;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-top: 60px;
+    animation: fade-in 0.5s;
+    /* انیمیشن برای پاپ آپ */
+}
+
+.modal:target {
+    display: block;
+}
+
+.modal .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    transform: translateY(0%);
+    position: relative;
+    object-fit: contain;
+    animation: zoom-in 0.5s;
+}
+
+@keyframes zoom-in {
+    from {
+        transform: scale(0.7);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.close {
+    position: fixed;
+    top: 10px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+p {
+    font-size: 18px;
+}
+
+.like-checkbox {
+    display: none;
+}
+
+.like-btn {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s;
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+}
+
+.like-checkbox:checked+.like-btn {
+    background-color: #B71C1C;
+    transform: scale(1.1);
+}
+
+.comments-section {
+    margin-bottom: 45px;
+    padding: 15px;
+
+}
+
+.comments-section h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.comments-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comments-list li {
+    background-color: #cfcece;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.comment-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.comment-form input {
+    flex: 1;
+    padding: 5px;
+}
+
+.comment-form button {
+    padding: 5px 10px;
+}
+
+input,
+button {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.p1 {
+    font-size: 22px;
+}
+
+.p2 {
+    color: #2964e2;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    padding-right: 10px;
+}
+
+.music-btn {
+    background-color: #B71C1C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.music-btn:hover {
+    background-color: #5a1d1d;
+    color: #fff;
+    transform: scale(1.1);
+    /* افکت بزرگنمایی روی هاور */
+}
+
+.footer {
+    background-color: #a11a1a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    /* سایه جعبه برای پانوشت */
+}
+button:hover {
+    background-color: #fa5e5e;
+  }
