@@ -1,45 +1,77 @@
 <!DOCTYPE html>
 <html lang="fa">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سایت عکس‌ها با تم انار</title>
-    <link rel="stylesheet" href="style.css">
+    <title>گالری برایان</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
-<body dir="rtl">
-    <header class="header">
-        <h1>گالری برایان </h1>
+
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <header>
+        <h1>گالری برایان</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="mobile">
+            
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="gallery.html">گالری</a></li>
+                <li><a href="contact-us.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <nav class="desktop">
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="gallery.html">گالری</a></li>
+                <li><a href="contact-us.html">تماس با ما</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">خانه</a></li>
-            <li><a href="gallery.html">گالری</a></li>
-            <li><a href="contact-us.html">تماس با ما</a></li>
-        </ul>
-    </nav>
+
+
     <main>
-        <section id="home">
-            <h2>به سایت ما خوش آمدید</h2>
-            <p>
-
-                به سایت برایان خوش آمدید !
- اینجا محلی است برای نمایش عکس‌های شخصی از زندگی آقای برایان.
- در این سایت، شما می‌توانید لحظات خاص و دوست‌داشتنی 
-از زندگی ایشان را مشاهده کنید و از دیدن آن‌ها لذت ببرید .
-برایان کیست؟
- آقای برایان فردی است که با علاقه و شور فراوان به ثبت لحظات زندگی می‌پردازد. 
-عکس‌های او نگاهی صمیمانه زیبا به زندگی شخصی‌اش دارند که با دیگران به اشتراک می‌گذارد .
-هدف ما چیست؟
- هدف ما ایجاد فضایی دوستانه و صمیمی برای نمایش عکس‌های شخصی آقای برایان
- و به اشتراک‌گذاری لحظات خاص زندگی او است. امیدواریم که با مشاهده این تصاویر،
- لحظات خوشی را تجربه کنید و از هنر عکاسی لذت ببرید .
-با ما همراه باشید و از دیدن عکس‌های شخصی و صمیمانه آقای برایان لذت ببری
-
-
-            </p>
-
-    <footer class="footer">
-        <p>&copy; 2024    . تمامی حقوق محفوظ است</p>
+        <h2>به سایت ما خوش آمدید</h2>
+        <p>
+            به سایت برایان خوش آمدید! <br>
+            اینجا محلی است برای نمایش عکس‌های شخصی از زندگی آقای برایان.
+            در این سایت، شما می‌توانید لحظات خاص و دوست‌داشتنی
+            از زندگی ایشان را مشاهده کنید و از دیدن آن‌ها لذت ببرید.
+            <br><br>
+            <strong>برایان کیست؟</strong><br>
+            آقای برایان فردی است که با علاقه و شور فراوان به ثبت لحظات زندگی می‌پردازد.
+            عکس‌های او نگاهی صمیمانه زیبا به زندگی شخصی‌اش دارند که با دیگران به اشتراک می‌گذارد.
+            <br><br>
+            <strong>هدف ما چیست؟</strong><br>
+            هدف ما ایجاد فضایی دوستانه و صمیمی برای نمایش عکس‌های شخصی آقای برایان
+            و به اشتراک‌گذاری لحظات خاص زندگی او است. امیدواریم که با مشاهده این تصاویر،
+            لحظات خوشی را تجربه کنید و از هنر عکاسی لذت ببرید.
+            <br>
+            با ما همراه باشید و از دیدن عکس‌های شخصی و صمیمانه آقای برایان لذت ببرید.
+        </p>
+    </main>
+    <footer>
+        &copy; 2025 گالری برایان . تمامی حقوق محفوظ است.
     </footer>
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav.mobile');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
+
+
+    
+
 </body>
+
 </html>
