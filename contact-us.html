@@ -7,25 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body dir="rtl">
-    <header class="header">
-        <h1>گالری برایان </h1>
+    <canvas id="particle-canvas"></canvas>
+    <header>
+        <h1>گالری برایان</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="mobile">
+
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="gallery.html">گالری</a></li>
+                <li><a href="contact-us.html">تماس با ما</a></li>
+            </ul>
+        </nav>
+        <nav class="desktop">
+            <ul>
+                <li><a href="index.html">خانه</a></li>
+                <li><a href="gallery.html">گالری</a></li>
+                <li><a href="contact-us.html">تماس با ما</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">خانه</a></li>
-            <li><a href="gallery.html">گالری</a></li>
-            <li><a href="contact-us.html">تماس با ما</a></li>
-        </ul>
-    </nav>
     <main>
         <section id="contact">
             <h2>تماس با ما</h2>
-            <p class="p1">برای ارتباط با برایان به آیدی تلگرام زیر پیام دهید</p>
-            <p class="p2">bayazi1387@</p>
+            <p>برای ارتباط با برایان به آیدی تلگرام زیر پیام دهید</p>
+            <p style="color: rgb(40, 110, 180); font-size: 30px;">bayazi1387@</p>
         </section>
     </main>
-    <footer class="footer">
-        <p>&copy; 2024    . تمامی حقوق محفوظ است</p>
+    <footer>
+        &copy; 2025 گالری برایان . تمامی حقوق محفوظ است.
     </footer>
+    <script src="script.js"></script>
+    <script>
+        
+        function toggleMenu() {
+            const nav = document.querySelector('nav.mobile');
+            const hamburger = document.querySelector('.hamburger');
+            nav.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
